@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>UK Stays - Home</title>
+    <link rel="stylesheet"  href="{%  static 'css/styles.css' %}">
+
+</head>
+<body>
+<script src="{% static 'js/script.js' %}"></script>
+<header>
+    <div class="container nav">
+        <nav>
+            <ul class="navbar">
+                <li><a class="active" href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'hotel_view' %}">View Hotels</a></li>
+                <li><a href="{% url 'booking' %}">Booking</a></li>
+                <li><a href="{% url 'create_login' %}">Create Login</a></li>
+                <li><a href="{% url 'enter_login' %}">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container head">
+    <h1>Welcome to UK Stays!</h1>
+    <p>Select from a range of comfortable hotels across the country. Look through the hotel's names, locations, ratings and prices per night to ensure you find the right stay for you.</p>
+</div>
+
+<section>
+    <h2>Find the perfect stay around the UK!</h2>
+</section>
+</body>
+</html>

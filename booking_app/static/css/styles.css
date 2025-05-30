@@ -1,0 +1,252 @@
+/* NOTE: USE CTRL + F5 TO REFRESH WEBPAGE CACHE */
+
+/* Styles the border of page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style of page */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.5;
+    background-color: #dbe4ee;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #81a4cd;
+    color: white;
+    padding: 1rem 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Styling for nav items */
+.navbar a {
+    color: #054a91;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.div {
+    width: 90%;
+    max-width: 1200%;
+    margin: 0 auto;
+}
+
+/* Indicates when cursor is over a nav item */
+.navbar a:hover {
+    background-color: #81a4cd;
+    color: black;
+}
+
+/* Indicates the active page */
+.navbar a.active{
+    background-color: #3e7cb1;
+    color: white;
+}
+
+/* Styling for H1 text */
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 12px;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 6px;
+}
+
+/* Styling for P text */
+p {
+    font-size: 1rem;
+    padding: 10px 10px;
+    text-align: center;
+    line-height: 1.5;
+    color: black;
+}
+
+/* Styling for the Hotel cards */
+.hotels {
+    padding: 2rem 0;
+}
+
+.hotel {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 50px;
+}
+
+.hotel-card {
+    border: 1.5px solid black;
+    border-radius: 10px;
+    min-height: 300px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-card img {
+    width: 100%;
+    height: auto;
+}
+
+.hotel-card h4 {
+    margin: 0.75rem;
+    color: black;
+}
+
+.hotel-card p {
+    display: block;
+    position: relative;
+    z-index: 1;
+    /* background: yellow; used to Debug Quirks Mode when <DOCTYPE html> was missing */
+    font-size: 1rem;
+    margin: 0 0.75rem 1rem;
+    color: black;
+}
+
+/* Styling for table data */
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Styling for the forms */
+
+/* Changes background colour to light blue
+   Adds space in the section
+   Makes the section into flex container
+   Centers the form container horizontally */
+
+.form-section {
+    background-color: #dbe4ee;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Changes form background colour to white
+   Ensures text isn't touching edges of form
+   Rounds the form edges
+   Limits the width of the form
+   Forces max with to be used
+   Shadow */
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: black;
+}
+
+.form-container p {
+
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: black;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: black;
+    outline: none;
+}
+
+.btn-sub {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: 1px solid;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-sub:hover {
+    background-color: #81a4cd;
+}
+

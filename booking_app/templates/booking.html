@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>UK Stays - New Booking</title>
+    <link rel="stylesheet"  href="{%  static 'css/styles.css' %}">
+</head>
+
+<body>
+<script src="{% static 'js/script.js' %}"></script>
+<header>
+    <div class="container nav">
+        <nav>
+            <ul class="navbar">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'hotel_view' %}">View Hotels</a></li>
+                <li><a class="active" href="{% url 'booking' %}">Booking</a></li>
+                <li><a href="{% url 'create_login' %}">Create Login</a></li>
+                <li><a href="{% url 'enter_login' %}">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container head">
+    <h1>Hotel Bookings</h1>
+    <p>Here you can book your next UK Stay and view your bookings. </p>
+</div>
+
+<!-- Form html -->
+<section class="form-section">
+    <div class="form-wrapper">
+        <div class="form-container">
+            <h2>Book your stay here...</h2>
+            <p>Look through the hotel's name, location, rating and price per night to ensure you find the right stay for you. Once you have, enter the details below. (Please enter valid data only).</p>
+            <form action="{% url 'create_login' %}" method="POST">
+            {% csrf_token %}
+                <div class="form-group">
+                    <label>First name</label>
+                    <input type="text" class="form-control" name="name" placeholder=" e.g. Bill" required>
+                </div>
+                <div class="form-group">
+                    <label>Surname</label>
+                    <input type="text" class="form-control" name="surname" placeholder=" e.g. Gates" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" placeholder=" 01234567890" required>
+                </div>
+                <div class="form-group">
+                    <label>E-mail Address</label>
+                    <input type="email" class="form-control" placeholder=" example@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Hotel Name</label>
+                    <input type="text" class="form-control" placeholder=" e.g. UK Stays Norwich">
+                </div>
+                <div class="form-group">
+                    <label>Hotel Location</label>
+                    <input type="text" class="form-control" placeholder="e.g. Norfolk">
+                </div>
+                <div class="form-group">
+                    <label>Number of nights</label>
+                    <input type="number" class="form-control" placeholder="e.g. 1">
+                </div>
+                <div class="form-group">
+                    <button class="btn-sub" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<table class="table" border="1">
+  <tr><th>Hotel ID</th><th>Hotel Name</th> <th>Hotel Location</th> <th>Hotel Rating</th> <th>Price Per Night</th></tr>
+  {% for hotels in hotels %}
+  <tr><td>{{ hotels.hotel_id }}</td><td>{{ hotels.hotel_name }}</td><td>{{ hotels.hotel_location }}</td><td>{{ hotels.hotel_rating }}</td><td>{{ hotels.price_per_night }}</td><td><button name="edit">UPDATE</button></td></tr>
+  {% endfor %}
+</table>
+
+</body>
+</html>

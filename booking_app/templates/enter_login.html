@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>UK Stays - Login</title>
+    <link rel="stylesheet"  href="{%  static 'css/styles.css' %}">
+</head>
+<body>
+<script src="{% static 'js/script.js' %}"></script>
+<header>
+    <div class="container nav">
+        <nav>
+            <ul class="navbar">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'hotel_view' %}">View Hotels</a></li>
+                <li><a href="{% url 'booking' %}">Booking</a></li>
+                <li><a href="{% url 'create_login' %}">Create Login</a></li>
+                <li><a class="active" href="{% url 'enter_login' %}">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<div class="container head">
+    <h1>Account Login</h1>
+    <p>Here you can log into your account.</p>
+</div>
+
+<!-- Form html -->
+<section class="form-section">
+    <div class="form-wrapper">
+        <div class="form-container">
+            <h1>Login</h1>
+            <p>To log into your account, please enter your email and password. (Please enter valid data only).</p>
+            <form action="{% url 'enter_login' %}" method="POST">
+            {% csrf_token %}
+                <div class="form-group">
+                    <label>E-mail Address</label>
+                    <input type="email" class="form-control" placeholder=" example@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder=" Required *">
+                </div>
+                <div class="form-group">
+                    <button class="btn-sub" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

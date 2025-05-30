@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Stays - View Hotels</title>
+   <link rel="stylesheet"  href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+<script src="{% static 'js/script.js' %}"></script>
+<header>
+    <div class="container nav">
+        <nav>
+            <ul class="navbar">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a class="active" href="{% url 'hotel_view' %}">View Hotels</a></li>
+                <li><a href="{% url 'booking' %}">Booking</a></li>
+                <li><a href="{% url 'create_login' %}">Create Login</a></li>
+                <li><a href="{% url 'enter_login' %}">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container head">
+    <h1>View all hotels!</h1>
+    <p>Select from a range of comfortable hotels across the country. Look through the hotel's names, locations, ratings and prices per night to ensure you find the right stay for you.</p>
+</div>
+
+<section>
+    <h2>Find the perfect stay around the UK!</h2>
+</section>
+
+<section class="hotel viewings">
+    <h3>North of England</h3>
+    <div class="hotel-grid">
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 1">
+            <h4>UK Stays Manchester</h4>
+            <p>This UK Stays Hotel is located in the busy city of Manchester, well known for its Football team Manchester United. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 2">
+            <h4>UK Stays Liverpool</h4>
+            <p>This UK Stays Hotel is located in the Historic city of Liverpool, famously home to the Beatles. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 3">
+            <h4>UK Stays Newcastle</h4>
+            <p>This UK Stays Hotel is located in Newcastle, best known for its rich industrial history and modern nightlife. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 4">
+            <h4>UK Stays York</h4>
+            <p>This UK Stays Hotel is located in York, with its medieval architecture built throughout, as well as numerous museums, it's a perfect place for to explore. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 5">
+            <h4>UK Stays Blackpool</h4>
+            <p>This UK Stays Hotel is located in Blackpool, known all over the UK for having one of the best displays of dazzling lights in the Blackpool Illuminations. Rating: 3/5, Price Per Night: £80.00</p>
+        </div>
+    </div>
+</section>
+
+<section class="hotel viewings">
+    <h3>East of England</h3>
+    <div class="hotel-grid">
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 1">
+            <h4>UK Stays Manchester</h4>
+            <p>This UK Stays Hotel is located in the busy city of Manchester, well known for its Football team Manchester United. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 2">
+            <h4>UK Stays Liverpool</h4>
+            <p>This UK Stays Hotel is located in the Historic city of Liverpool, famously home to the Beatles. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 3">
+            <h4>UK Stays Newcastle</h4>
+            <p>This UK Stays Hotel is located in Newcastle, best known for its rich industrial history and modern nightlife. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 4">
+            <h4>UK Stays York</h4>
+            <p>This UK Stays Hotel is located in York, with its medieval architecture built throughout, as well as numerous museums, it's a perfect place for to explore. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 5">
+            <h4>UK Stays Blackpool</h4>
+            <p>This UK Stays Hotel is located in Blackpool, known all over the UK for having one of the best displays of dazzling lights in the Blackpool Illuminations. Rating: 3/5, Price Per Night: £80.00</p>
+        </div>
+    </div>
+</section>
+
+<section class="hotel viewings">
+    <h3>South of England</h3>
+    <div class="hotel-grid">
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 1">
+            <h4>UK Stays Manchester</h4>
+            <p>This UK Stays Hotel is located in the busy city of Manchester, well known for its Football team Manchester United. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 2">
+            <h4>UK Stays Liverpool</h4>
+            <p>This UK Stays Hotel is located in the Historic city of Liverpool, famously home to the Beatles. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 3">
+            <h4>UK Stays Newcastle</h4>
+            <p>This UK Stays Hotel is located in Newcastle, best known for its rich industrial history and modern nightlife. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 4">
+            <h4>UK Stays York</h4>
+            <p>This UK Stays Hotel is located in York, with its medieval architecture built throughout, as well as numerous museums, it's a perfect place for to explore. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 5">
+            <h4>UK Stays Blackpool</h4>
+            <p>This UK Stays Hotel is located in Blackpool, known all over the UK for having one of the best displays of dazzling lights in the Blackpool Illuminations. Rating: 3/5, Price Per Night: £80.00</p>
+        </div>
+    </div>
+</section>
+
+<section class="hotel viewings">
+    <h3>West of England</h3>
+    <div class="hotel-grid">
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 1">
+            <h4>UK Stays Manchester</h4>
+            <p>This UK Stays Hotel is located in the busy city of Manchester, well known for its Football team Manchester United. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 2">
+            <h4>UK Stays Liverpool</h4>
+            <p>This UK Stays Hotel is located in the Historic city of Liverpool, famously home to the Beatles. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 3">
+            <h4>UK Stays Newcastle</h4>
+            <p>This UK Stays Hotel is located in Newcastle, best known for its rich industrial history and modern nightlife. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 4">
+            <h4>UK Stays York</h4>
+            <p>This UK Stays Hotel is located in York, with its medieval architecture built throughout, as well as numerous museums, it's a perfect place for to explore. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 5">
+            <h4>UK Stays Blackpool</h4>
+            <p>This UK Stays Hotel is located in Blackpool, known all over the UK for having one of the best displays of dazzling lights in the Blackpool Illuminations. Rating: 3/5, Price Per Night: £80.00</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
